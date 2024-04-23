@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cmtoinch
+    </title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <center>
+  <body>
+    <!-- Start your code here -->
+    <div id="container">
+      <h2>Cm To Inches
+      </h2>
+      <div>
+        <input type="number" id="input"  placeholder="Enter CM Value"/>
+      </div>
+      <div>
+        <button id="submit" onclick=convert()>Convert Cm to Inches
+        </button>
+      </div>
+      <div id="result">
+      </div>
+    </div>
+    <script>
+      function convert(){
+        let cmval=Number(document.getElementById("input").value);
+        let inval=cmval/2.54;
+        let result=document.getElementById("result");
+        result.innerHTML=inval.toFixed(4)
+      }
+    </script>
+    <!-- End your code here -->
+  </body>
+</center>
+</html>
