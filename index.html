@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+    <div id="container">
+        <h1>heat</h1>
+        <input type="text" id="input">
+        <button onclick="convert()">convert</button>
+        <div id="result" ></div>
+    </div>
+    <script>
+        function convert(){
+            let fran=Number(document.getElementById("input").value)
+            let cel= (fran- 32) * 5/9
+            
+            let result=document.getElementById("result")
+            result.innerHTML=cel
+        }
+
+</script>
+    </center>
+</body>
+</html>
